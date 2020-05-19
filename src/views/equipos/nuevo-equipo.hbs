@@ -1,0 +1,64 @@
+<div class="jumbotron conSombra">
+    <h1 class="display-4">Equipos</h1>
+    <p class="lead">Ingresa un Equipo.</p>
+    <hr class="my-4">
+    <form action="/equipos/nuevo-equipo/" method="POST">
+        <div class="form-group row">
+            <label for="serie" class="col-3 col-form-label my-2">Serie*</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="serie" id="serie" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="usuario_equipo" class="col-3 col-form-label my-2">Usuario del Equipo</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="usuario_equipo" id="usuario_equipo">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="nombre_equipo" class="col-3 col-form-label my-2">Nombre del Equipo</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="nombre_equipo" id="nombre_equipo">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ip" class="col-3 col-form-label my-2">IP*</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="ip" id="ip" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="mac" class="col-3 col-form-label my-2">MAC*</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="mac" id="mac" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inventario" class="col-3 col-form-label my-2">Inventario</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="inventario" id="inventario">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="id_proveedor" class="col-3 col-form-label my-2">Id Proveedor</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="id_proveedor" id="id_proveedor">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="equipamiento" class="col-3 col-form-label my-2">Equipamiento?</label>
+            <div class="col-7">
+                <input type="text" class="form-control" name="equipamiento" id="equipamiento">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="observacion" class="col-3 col-form-label my-2">Observacion</label>
+            <div class="col-7">
+                <textarea class="form-control" name="observacion" id="observacion" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+                <button class="btn btn-primary btn-block mt-3"> Guardar </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="jumbotron conSombra" style="width: 100%;">
+        <h1 class="display-4">Equipos</h1>
+        <div class="float-right"><a href="/equipos/nuevo"><span class="material-icons-two-tone md-48">add_box</span></a></div>
+        <p class="lead">Equipos ingresados a la fecha.</p>
+        <hr class="my-4">
+        <div class="table-responsive">
+        <table class="table table-hover" >
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Serie</th>
+            <th scope="col">Usuario del Equipo</th>
+            <th scope="col">Unidad</th>
+            <th scope="col">Proyecto</th>
+            <th scope="col">Ip</th>
+            <th scope="col">Mac</th>
+            <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each equipos}}
+        <tr>
+            <td>{{serie}}</td>
+            <td>{{usuario_equipo}}</td>
+            <td>Unidad</td>
+            <td>Proyecto</td>
+            <td>{{ip}}</td>
+            <td>{{mac}}</td>
+            <td><a href="/equipos/edit/{{_id}}"><span class="material-icons-two-tone md-48">edit</span></a>
+            <a href="/equipos/delete/{{_id}}"><span class="material-icons-two-tone md-48">delete_forever</span></a>
+            <span class="material-icons-two-tone md-48">add_comment</span>
+            </td>
+        </tr>
+        {{/each }}
+        </tbody>
+        </table>
+        </div>
+    </div>
+</div>
